@@ -42,7 +42,7 @@ import type { ComputedRef } from 'vue';
 import { misskeyApi } from '@/misskey-api.js';
 import { i18n } from '@/i18n.js';
 
-const SECOND_FETCH_LIMIT = 30;
+const SECOND_FETCH_LIMIT = 32;
 const TOLERANCE = 16;
 const APPEAR_MINIMUM_INTERVAL = 600;
 
@@ -201,7 +201,7 @@ async function init(): Promise<void> {
 	}).then(res => {
 		for (let i = 0; i < res.length; i++) {
 			const item = res[i];
-			if (i === 3) item._shouldInsertAd_ = true;
+			if (i % 8 === 0) item._shouldInsertAd_ = true;
 		}
 
 		if (res.length === 0 || props.pagination.noPaging) {
@@ -241,7 +241,7 @@ const fetchMore = async (): Promise<void> => {
 	}).then(res => {
 		for (let i = 0; i < res.length; i++) {
 			const item = res[i];
-			if (i === 10) item._shouldInsertAd_ = true;
+			if (i % 8 === 0) item._shouldInsertAd_ = true;
 		}
 
 		const reverseConcat = _res => {

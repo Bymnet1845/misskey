@@ -8,10 +8,10 @@ import * as Misskey from 'misskey-js';
 import type { ComputedRef, Ref, ShallowRef } from 'vue';
 import { misskeyApi } from '@/utility/misskey-api.js';
 
-const MAX_ITEMS = 30;
-const MAX_QUEUE_ITEMS = 100;
-const FIRST_FETCH_LIMIT = 15;
-const SECOND_FETCH_LIMIT = 30;
+const MAX_ITEMS = 32;
+const MAX_QUEUE_ITEMS = 128;
+const FIRST_FETCH_LIMIT = 16;
+const SECOND_FETCH_LIMIT = 32;
 
 export type MisskeyEntity = {
 	id: string;
@@ -215,7 +215,7 @@ export class Paginator<
 
 		for (let i = 0; i < apiRes.length; i++) {
 			const item = apiRes[i];
-			if (i === 3) item._shouldInsertAd_ = true;
+			if (i % 8 === 0) item._shouldInsertAd_ = true;
 		}
 
 		this.pushItems(apiRes);
@@ -270,7 +270,7 @@ export class Paginator<
 
 		for (let i = 0; i < apiRes.length; i++) {
 			const item = apiRes[i];
-			if (i === 10) item._shouldInsertAd_ = true;
+			if (i % 8 === 0) item._shouldInsertAd_ = true;
 		}
 
 		this.pushItems(apiRes);
