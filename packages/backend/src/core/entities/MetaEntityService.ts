@@ -115,6 +115,7 @@ export class MetaEntityService {
 				place: ad.place,
 				ratio: ad.ratio,
 				imageUrl: ad.imageUrl,
+				memo: ad.memo,
 				dayOfWeek: ad.dayOfWeek,
 			})),
 			notesPerOneAd: instance.notesPerOneAd,

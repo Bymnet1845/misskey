@@ -187,6 +187,10 @@ export const packedMetaLiteSchema = {
 						optional: false, nullable: false,
 						format: 'url',
 					},
+					memo: {
+						type: 'string',
+						optional: false, nullable: false,
+					},
 					dayOfWeek: {
 						type: 'integer',
 						optional: false, nullable: false,
