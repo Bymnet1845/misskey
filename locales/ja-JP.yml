@@ -308,7 +308,7 @@ agreeTo: "{0}に同意"
 agree: "同意する"
 agreeBelow: "次に同意する"
 basicNotesBeforeCreateAccount: "基本的な注意事項"
-termsOfService: "利用規約"
+termsOfService: "約款"
 start: "始める"
 home: "ホーム"
 remoteUserCaution: "リモート・ユーザーのため、情報が不完全です。"
@@ -1634,7 +1634,7 @@ _timelineDescription:
   global: "グローバル・タイムラインでは、接続している他のすべてのサーバーからの投稿を見られます。"
 
 _serverRules:
-  description: "新規登録前に表示する、サーバーの簡潔なルールを設定します。内容は利用規約の要約とすることを推奨します。"
+  description: "新規登録前に表示する、サーバーの簡潔なルールを設定します。内容は約款の要約とすることを推奨します。"
 
 _serverSettings:
   iconUrl: "アイコン画像のURL"
