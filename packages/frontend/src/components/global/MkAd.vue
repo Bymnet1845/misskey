@@ -134,16 +134,16 @@ function reduceFrequency(): void {
 	&.form_horizontal {
 		> .link,
 		> .link > .img {
-			max-width: min(600px, 100%);
-			max-height: 80px;
+			max-width: min(468px, 100%);
+			max-height: 60px;
 		}
 	}
 
 	&.form_horizontalBig {
 		> .link,
 		> .link > .img {
-			max-width: min(600px, 100%);
-			max-height: 250px;
+			max-width: min(728px, 100%);
+			max-height: 90px;
 		}
 	}
 
@@ -171,7 +171,6 @@ function reduceFrequency(): void {
 	display: block;
 	object-fit: contain;
 	margin: auto;
-	border-radius: 5px;
 }
 
 .i {
@@ -186,8 +185,8 @@ function reduceFrequency(): void {
 }
 
 .iIcon {
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 12px;
+	line-height: 14px;
 }
 
 .menu {
