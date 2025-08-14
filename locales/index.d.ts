@@ -1251,7 +1251,7 @@ export interface Locale extends ILocale {
      */
     "basicNotesBeforeCreateAccount": string;
     /**
-     * 利用規約
+     * 約款
      */
     "termsOfService": string;
     /**
@@ -6099,7 +6099,7 @@ export interface Locale extends ILocale {
          */
         "end": string;
         /**
-         * アクティブなお知らせが多いため、UXが低下する可能性があります。終了したお知らせはアーカイブすることを検討してください。
+         * アクティブなお知らせが多いため、ユーザー体験が低下する可能性があります。終了したお知らせはアーカイブすることを検討してください。
          */
         "tooManyActiveAnnouncementDescription": string;
         /**
@@ -6111,7 +6111,7 @@ export interface Locale extends ILocale {
          */
         "readConfirmText": ParameterizedString<"title">;
         /**
-         * 特に新規ユーザーのUXを損ねる可能性が高いため、常時掲示するための情報ではなく、即時性が求められる情報の掲示のためにお知らせを使用することを推奨します。
+         * 特に新規ユーザーのユーザー体験を損ねる可能性が高いため、常時掲示するための情報ではなく、即時性が求められる情報の掲示のためにお知らせを使用することを推奨します。
          */
         "shouldNotBeUsedToPresentPermanentInfo": string;
         /**
@@ -6433,7 +6433,7 @@ export interface Locale extends ILocale {
     };
     "_serverRules": {
         /**
-         * 新規登録前に表示する、サーバーの簡潔なルールを設定します。内容は利用規約の要約とすることを推奨します。
+         * 新規登録前に表示する、サーバーの簡潔なルールを設定します。内容は約款の要約とすることを推奨します。
          */
         "description": string;
     };
