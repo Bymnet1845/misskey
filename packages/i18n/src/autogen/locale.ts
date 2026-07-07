@@ -2185,7 +2185,7 @@ export interface Locale extends ILocale {
      */
     "limitTo": ParameterizedString<"x">;
     /**
-     * 画面幅が広いときはメディアリストを横並びで表示する
+     * 画面幅が広いときはメディア・リストを横並びで表示する
      */
     "showMediaListByGridInWideArea": string;
     /**
@@ -3024,6 +3024,14 @@ export interface Locale extends ILocale {
      * このノートはすでにクリップ「{name}」に含まれています。ノートをこのクリップから除外しますか？
      */
     "confirmToUnclipAlreadyClippedNote": ParameterizedString<"name">;
+    /**
+     * このアンテナから削除
+     */
+    "removeFromAntenna": string;
+    /**
+     * 「{name}」からこのノートを削除しますか？
+     */
+    "removeNoteFromAntennaConfirm": ParameterizedString<"name">;
     /**
      * パブリック
      */
@@ -4881,6 +4889,10 @@ export interface Locale extends ILocale {
      */
     "unnotifyNotes": string;
     /**
+     * 投稿通知を設定したユーザー
+     */
+    "notifyUsers": string;
+    /**
      * 認証
      */
     "authentication": string;
@@ -5647,6 +5659,42 @@ export interface Locale extends ILocale {
      * 設定項目はありません
      */
     "nothingToConfigure": string;
+    /**
+     * リノート先のチャンネルを見る
+     */
+    "viewRenotedChannel": string;
+    /**
+     * テーマのプレビュー中
+     */
+    "previewingTheme": string;
+    /**
+     * 元に戻す
+     */
+    "previewingThemeRestore": string;
+    /**
+     * アクセス・トークン
+     */
+    "accessToken": string;
+    /**
+     * 絵文字パレットを選択
+     */
+    "chooseEmojiPalette": string;
+    /**
+     * 絵文字パレットに追加
+     */
+    "addToEmojiPalette": string;
+    /**
+     * この絵文字はすでにこの絵文字パレットに含まれています。追加しなおしますか？
+     */
+    "emojiPaletteAlreadyAddedConfirm": string;
+    /**
+     * 末尾に追加
+     */
+    "append": string;
+    /**
+     * 先頭に追加
+     */
+    "prepend": string;
     "_imageEditing": {
         "_vars": {
             /**
@@ -8110,6 +8158,10 @@ export interface Locale extends ILocale {
              */
             "maxFileSize_caption": string;
             /**
+             * サーバー全体の最大ファイル・サイズ設定は {max} です。これより大きいファイルをアップロードできるようにするには、Misskeyの設定ファイルからこの設定を緩和してください。
+             */
+            "maxFileSize_caption2": ParameterizedString<"max">;
+            /**
              * ファイルにセンシティブを常に付与
              */
             "alwaysMarkNsfw": string;
@@ -8173,6 +8225,10 @@ export interface Locale extends ILocale {
              * 翻訳機能の利用
              */
             "canUseTranslator": string;
+            /**
+             * チャンネルの作成
+             */
+            "canCreateChannel": string;
             /**
              * アイコン・デコレーションの最大取付個数
              */
@@ -9974,15 +10030,15 @@ export interface Locale extends ILocale {
              */
             "labelTime": string;
             /**
-             * タイムゾーン
+             * タイム・ゾーン
              */
             "labelTz": string;
             /**
-             * 時刻とタイムゾーン
+             * 時刻とタイム・ゾーン
              */
             "labelTimeAndTz": string;
             /**
-             * タイムゾーン
+             * タイム・ゾーン
              */
             "timezone": string;
             /**
@@ -10006,7 +10062,7 @@ export interface Locale extends ILocale {
              */
             "url": string;
             /**
-             * 更新間隔(秒)
+             * 更新間隔（秒）
              */
             "refreshIntervalSec": string;
             /**
@@ -10020,7 +10076,7 @@ export interface Locale extends ILocale {
              */
             "shuffle": string;
             /**
-             * ティッカーのスクロール速度(秒)
+             * ティッカーのスクロール速度（秒）
              */
             "duration": string;
             /**
@@ -12521,6 +12577,14 @@ export interface Locale extends ILocale {
          * 例：「misskey.example.com」
          */
         "serverHostPlaceholder": string;
+        /**
+         * 投稿日時from
+         */
+        "postFrom": string;
+        /**
+         * 投稿日時to
+         */
+        "postTo": string;
     };
     "_serverSetupWizard": {
         /**
@@ -13109,25 +13173,17 @@ export interface Locale extends ILocale {
              */
             "centerY": string;
             /**
-             * スムージング
+             * 密度
              */
-            "zoomLinesSmoothing": string;
+            "density": string;
             /**
-             * スムージングと集中線の幅の設定は併用できません。
+             * 線の影の太さ
              */
-            "zoomLinesSmoothingDescription": string;
-            /**
-             * 集中線の幅
-             */
-            "zoomLinesThreshold": string;
+            "zoomLinesOutlineThickness": string;
             /**
              * 中心径
              */
             "zoomLinesMaskSize": string;
-            /**
-             * 黒色にする
-             */
-            "zoomLinesBlack": string;
             /**
              * 円形
              */
